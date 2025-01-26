@@ -1,0 +1,33 @@
+body {
+  margin: 0px;
+  font-family: arial, helvetica, sans-serif;
+  padding-bottom: 600px;
+  color: #111111;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0px;
+}
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul a {
+  color: var(--cor-0);
+  padding: 16px 0px;
+  display: inline-block;
+  font-size: 18px;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
