@@ -7,4 +7,11 @@
 @import "./utilidades.css/componentes.css";
 
 /* Home */
-@import "./css/home/introducao.css";
+@import "./home/introducao.css";
+
+/* Bicicletas Listas */
+@import "./bicicletas.css/bicicletas-lista.css";
+@import "./bicicletas.css/cores-bicicletas.css";
+
+/* Parceiros */
+@import "./parceiros.css/lista-parceiros.css";
