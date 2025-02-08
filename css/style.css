@@ -16,3 +16,6 @@
 
 /* Parceiros */
 @import "./parceiros.css/lista-parceiros.css";
+
+/* Seguros */
+@import "./seguros.css/seguros-lista.css";
