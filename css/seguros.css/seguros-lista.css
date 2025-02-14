@@ -29,6 +29,9 @@
 .seguro-container h3 {
   margin-bottom: 40px;
 }
+.lista-informacoes li:hover {
+  color: var(--cor-0);
+}
 .seguro-container a {
   grid-column: 1/-1;
 }
