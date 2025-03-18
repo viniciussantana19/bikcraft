@@ -25,3 +25,9 @@
 
 /* termos */
 @import "./termos/termo.css";
+
+/* Pagina Bicicletas */
+@import "./pagina-bicicleta.css/bicicletas-pagina.css";
+
+/* Pagina Bicicletas */
+@import "./contatos.css/contato.css";

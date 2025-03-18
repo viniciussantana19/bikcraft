@@ -1,6 +1,7 @@
 .header-bg {
   background-color: var(--cor-12);
 }
+
 .header {
   display: flex;
   gap: 20px;

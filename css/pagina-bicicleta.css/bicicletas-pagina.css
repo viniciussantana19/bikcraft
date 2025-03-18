@@ -1,0 +1,174 @@
+.backgroud-pagina {
+  background-color: var(--cor-11);
+  padding: 60px 0px;
+  color: white;
+}
+.grid-bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.titulo-principal-main {
+  margin-bottom: 40px;
+}
+.titulo-principal {
+  margin-bottom: 40px;
+}
+.grid-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-content: flex-start;
+}
+.grid-img img {
+  flex: 1;
+  min-width: 200px;
+}
+.grid-img img:first-child {
+  min-width: 100%;
+}
+.introducao-magic {
+  margin-bottom: 30px;
+}
+.grid-comprar-pagina {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 30px;
+}
+
+.grid-comprar-pagina li {
+  display: flex;
+  background-color: var(--cor-12);
+  padding: 5px;
+  margin: 6px;
+  border-radius: 4px;
+  max-width: max-content;
+  gap: 6px;
+}
+.grid-info {
+  background-color: var(--cor-12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  gap: 40px;
+  border-radius: 4px;
+}
+.grid-info img {
+  width: 24px;
+  margin-bottom: 4px;
+}
+.flex-ficha {
+  background-color: var(--cor-12);
+  padding: 30px 40px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.flex-ficha li {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-ficha li {
+  padding: 10px 0px;
+}
+.flex-ficha li + li {
+  border-top: 1px solid var(--cor-11);
+}
+
+@media (max-width: 900px) {
+  .grid-bicicletas {
+    grid-template-columns: 1fr;
+    grid-row: 3;
+  }
+  .container-principal-pagina {
+    grid-row: 1;
+  }
+  .grid-comprar-pagina ul {
+    display: none;
+  }
+}
+
+/* Escolha bicicletas abaixo */
+.article-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.grid-biks {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+}
+.grid-biks img {
+  min-width: 280px;
+  flex: 1;
+}
+.grid-biks {
+  padding-bottom: 20px;
+}
+.grid-biks img {
+  margin-bottom: 15px;
+}
+.grid-biks h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.grid-biks h3::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  transition: 0.3s;
+}
+.grid-biks h3:hover::before {
+  width: 20px;
+}
+.grid-biks span {
+  margin-left: 21px;
+}
+.grid-biks a {
+  display: inline-block;
+}
+
+/*  Pedale mais seguro **/
+.grid-container-seguros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.pedale-bg {
+  box-shadow: inset 0px -120px black, inset 0px 120px white;
+  background-color: var(--cor-11);
+  color: white;
+}
+.grid-container-seguros h2 {
+  margin-bottom: 30px;
+}
+.grid-container-seguros p {
+  margin-bottom: 20px;
+}
+.introducao-principal {
+  align-content: center;
+}
+@media (max-width: 1000px) {
+  .grid-container-seguros {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .grid-container-seguros {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .introducao-principal {
+    grid-row: 1;
+  }
+  .pedale-bg {
+    box-shadow: none;
+  }
+}
