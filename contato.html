@@ -7,9 +7,11 @@
   <title>Contatos | Bikcraft</title>
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body class="formulario-bg">
@@ -48,21 +50,26 @@
           <li class="endereco-rio-nulo">Rio de Janeiro - RJ</li>
           <li class="endereco-rio-nulo">Brasil - Terra - Vita Láctea</li>
         </ul>
-        <ul class="emails font-2-s cor-4">
+        <address>
+          <ul class="emails font-2-s cor-4">
 
-          <li class="flex-endereco-email">
-            <img src="./img/icones/email.svg" alt="">
-            contato@bikcraft.com
-          </li>
-          <li class="endereco-rio-email">assistencia@bikcraft.com</li>
-        </ul>
-        <ul class="telefone-de-contato font-2-s cor-4">
+            <li class="flex-endereco-email">
+              <img src="./img/icones/email.svg" alt="">
+              <a href="mailto:contato@bikcraft.com" class="font-2-s cor-4 link-sem-formatacao">contato@bikcraft.com</a>
 
-          <li class="flex-endereco-telefone">
-            <img src="./img/icones/telefone.svg" alt="">
-            +55 21 9999-9999
-          </li>
-        </ul>
+            </li>
+            <li class="endereco-rio-email">
+              <a href="mailto:assistencia@bikcraft.com" class="font-2-s cor-4 link-sem-formatacao">assistencia@bikcraft.com</a>
+            </li>
+          </ul>
+          <ul class="telefone-de-contato font-2-s cor-4">
+
+            <li class="flex-endereco-telefone">
+              <img src="./img/icones/telefone.svg" alt="">
+              <a href="tel:+552199999999" class="font-2-s cor-4 link-sem-formatacao">+55 21 9999-9999</a>
+            </li>
+          </ul>
+        </address>
         <div class="logo-redes-contatos">
           <img src="./img/redes/instagram-p.svg" alt="">
           <img src="./img/redes/facebook-p.svg" alt="">
@@ -192,22 +199,22 @@
             <h2 class="font-2-l-b cor-0">Informações</h2>
           </li>
           <li>
-            <a href="">
+            <a href="./bicicletas.html">
               <p>Bicicletas</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="./seguros.html">
               <p>Seguros</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="./contato.html">
               <p>Contato</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="./termos.html">
               <p>Termos e Condições</p>
             </a>
           </li>
@@ -218,7 +225,6 @@
       <p class="font-2-m cor-6 ">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
-
 </body>
 
 </html>

@@ -1,0 +1,262 @@
+.especial-termos {
+  background: rgb(17, 17, 17);
+  background: linear-gradient(
+    180deg,
+    rgba(17, 17, 17, 1) 60%,
+    rgba(247, 247, 247, 1) 60%
+  );
+}
+.orcamento-geral {
+  margin-bottom: 120px;
+}
+.orcamento-geral {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  margin-top: 60px;
+}
+
+.nome-sobrenome-orcamento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+}
+.nome-sobrenome-orcamento label {
+  display: block;
+  margin-bottom: 4px;
+  font: 500 1rem / 1.5 "Poppins", sans-serif;
+}
+.nome-sobrenome-orcamento input {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font: 400 1rem / 1.5 "Roboto", sans-serif;
+  background: var(--cor-1);
+  box-sizing: border-box;
+}
+.formulario-orcamento {
+  background-color: var(--cor-0);
+}
+.orcamento-produto {
+  background-color: var(--cor-12);
+}
+.orcamento-produto,
+.formulario-orcamento {
+  padding: 60px;
+}
+.cpf-email input {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+}
+.endereco-entrega input {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font: 400 1rem / 1.5 "Roboto", sans-serif;
+  background: var(--cor-1);
+  box-sizing: border-box;
+}
+.endereco-entrega label {
+  margin-bottom: 4px;
+  font: 500 1rem / 1.5 "Poppins", sans-serif;
+}
+.cpf-email label {
+  margin-bottom: 4px;
+  font: 500 1rem / 1.5 "Poppins", sans-serif;
+}
+.cpf-email input {
+  margin-bottom: 4px;
+  border-radius: 4px;
+  font: 400 1rem / 1.5 "Roboto", sans-serif;
+  background: var(--cor-1);
+  padding: 6px 8px;
+}
+.endereco-entrega {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+}
+.formulario-orcamento input:focus,
+textarea:focus {
+  border: 2px solid var(--cor-p1);
+  outline: none;
+}
+.formulario-orcamento input {
+  border: 0px;
+  border: 1px solid var(--cor-2);
+}
+.formulario-orcamento h2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.diferente {
+  margin-top: 30px;
+}
+.formulario-orcamento h2::before {
+  content: "";
+  width: 4px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  display: inline-block;
+  position: absolute;
+  left: -10px;
+}
+
+.endereco-entrega {
+  margin-bottom: 20px;
+}
+.orcamento-botao {
+  border: 0px;
+}
+.orcamento-botao {
+  cursor: pointer;
+  border: 0px;
+}
+.formulario-orcamento label {
+  padding: 10px;
+}
+/* Biks/Seguros */
+.orcamento-conteudo {
+  display: none;
+}
+#bikcraft:checked ~ #orcamento-bikcraft,
+#seguro:checked ~ #orcamento-seguro {
+  display: block;
+}
+.orcamento-produto label {
+  background-color: var(--cor-9);
+  color: var(--cor-4);
+}
+.orcamento-produto > * {
+  grid-column: 1 /-1;
+}
+.orcamento-produto > label {
+  grid-column: initial;
+}
+.orcamento-produto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 20px;
+}
+.orcamento-produto label {
+  color: var(--cor-4);
+  background-color: var(--cor-9);
+  display: block;
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+.orcamento-produto input:checked + label {
+  background: var(--cor-0);
+  color: var(--cor-11);
+}
+.orcamento-produto input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.orcamento-produto input:checked + label::before {
+  border-color: var(--cor-7);
+  box-shadow: inset 0 0 0 3px var(--cor-0), inset 0 0 0 6px var(--cor-7);
+}
+.orcamento-produto label::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  box-sizing: border-box;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--cor-6);
+  margin-right: 8px;
+}
+.orcamento-produto h2 {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.orcamento-produto h2::before {
+  content: "";
+  width: 4px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  display: inline-block;
+  position: absolute;
+  left: -10px;
+}
+.orcamento-conteudo label {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+.orcamento-conteudo label span {
+  display: none;
+}
+.orcamento-conteudo input:checked + label span {
+  display: inline-block;
+}
+.orcamento-conteudo h2 {
+  margin-top: 20px;
+}
+.orcamento-conteudo label {
+  margin-top: 15px;
+}
+.icones-grid-orcamento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-0);
+  padding: 16px;
+  color: var(--cor-12);
+  border-radius: 4px;
+  margin-top: 15px;
+  align-items: center;
+}
+.lista-icones-orcamento li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-items: center;
+  margin: 5px 0px 5px 0px;
+}
+.lista-icones-orcamento img {
+  width: 15px;
+  height: auto;
+}
+.icones-grid-orcamento {
+  display: none;
+}
+#nebula:checked ~ #nebula-orcamento,
+#magic:checked ~ #magic-orcamento,
+#nimbus:checked ~ #nimbus-orcamento {
+  display: grid;
+}
+.termos-condicoes {
+  padding-top: 60px;
+}
+.orcamento-produto label:hover {
+  background-color: var(--cor-8);
+}
+
+@media (max-width: 900px) {
+  .orcamento-geral {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .endereco-entrega {
+    grid-template-columns: 1fr;
+  }
+  .nome-sobrenome-orcamento {
+    grid-template-columns: 1fr;
+  }
+  .nome-sobrenome-orcamento label {
+    padding: 0px;
+    margin: 0px;
+  }
+}

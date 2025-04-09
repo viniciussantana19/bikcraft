@@ -193,9 +193,12 @@ textarea {
     width: 80%;
     height: 3rem;
   }
-  lex-endereco-rua {
+  .flex-endereco-rua {
     display: flex;
     gap: 8px;
     align-items: center;
   }
+}
+.link-sem-formatacao {
+  padding: 0px;
 }
